@@ -10,5 +10,6 @@ public class Using_Length_Function {
         //  SHORT
         System.out.println(Arrays.stream(marks).max());       //MAX
         System.out.println(Arrays.stream(marks).min());       //MIN
+        
     }
 }
