@@ -1,22 +1,21 @@
-class Solution 
-{
+class Solution {
 public:
-    int removeDuplicates(vector<int>& nums) 
-    {
-        int n = nums.size();
+    int removeDuplicates(vector<int>& Nums) 
         
-        int k = 1 ;
-        
-        for(int i = 1 ; i<n;i++)
         {
-            if(nums[i]!=nums[i-1])
+            if(Nums.size() == 0 )
+                return 0;
+            int k=1;
+            int n = Nums.size();
+            for(int i=1;i<k;i++)
             {
-                nums[k] = nums[i];
-                 k++;
+                if(!Nums[i]==Nums[i-1])
+                {
+                   Nums[k]=Nums[i];
+                     k++;
+                }
             }
-           
-        }
-        return k;
+            return k;
         
     }
 };
